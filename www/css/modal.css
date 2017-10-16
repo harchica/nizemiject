@@ -1,0 +1,79 @@
+#g_form{
+    color:#fff;
+    text-align:center;
+    background-color:#ffa202;
+    font-size: 16px;
+    }
+
+#b_form{
+    color:#fff;
+    text-align:center;
+    background-color:#2f89ce;
+    font-size: 16px;
+}
+
+#g_form input{
+    width:280px;
+    height:24px;  
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+ border:solid 1px #EEA34A;
+font-size: 16px;
+font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+color:#af2a4d;
+padding: 4px;
+-webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+-moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+#g_form button{
+height: 32px;
+border:solid 1px #fff;
+margin:8px 8px 24px;
+padding:0px 16px;
+font-size:8px;
+text-transform:uppercase;
+font-weight:bold;
+color:#fff;
+background-color: #ff9d26;
+cursor:pointer;
+}
+
+#b_form input{
+        width:280px;
+    height:24px;  
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+ border:solid 1px #02aaff;
+font-size: 16px;
+font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+color:#7b67b2;
+padding: 4px;
+-webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+-moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+    
+}
+
+#b_form button{
+height: 32px;
+border:solid 1px #fff;
+margin:8px 8px 24px;
+padding:0px 16px;
+font-size:8px;
+text-transform:uppercase;
+font-weight:bold;
+color:#fff;
+background-color: #02aaff;
+cursor:pointer;
+}
+
