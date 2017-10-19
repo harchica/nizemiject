@@ -25,10 +25,15 @@ window.onload = function(){
            // $('<li class="resultlog">'+ result +'</li>').appendTo('ul');
        var list = $('<li class="resultlog">'+ log+'<p class="goodlog">good:'+ good+ '</p></li>');
         $("#afterlogs").after(list);
+        $('.resultlog').attr('id', 'log'+i);
+        $('#log'+i).css('background-color','rgba(224,'+(137-good)+','+(162-good)+',1)');
         }
         if(bad>0){
         var list = $('<li class="resultlog">'+log +'<br><p class="badlog">bad:'+bad+ '</span></li>');
         $("#afterlogs").after(list);
+        $('.resultlog').attr('id', 'log'+i);
+        $('#log'+i).css('background-color','rgba('+(178-bad)+','+(137-bad)+','+'211,1)');
+
         }
             }
           })

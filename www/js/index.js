@@ -32,6 +32,9 @@ $(function() {
     'touchend mouseup ': function(e) {
       if (touched) {
           if (touch_time < 5000 ) {
+              touch_time -= 500;
+        $('.good_div').css('background-color','rgba(247,'+(247-cnt)+','+(247-cnt)+',1)');
+         $('#add').css('background-color','rgba(247,'+(247-cnt)+','+(247-cnt)+',1)');
         // 外枠のDIVを作成
         var elm_div = $('<li />', {
         	css: {
@@ -105,7 +108,10 @@ $(function() {
     'touchend mouseup ': function(e) {
       if (touched) {
           if (touch_time < 3000 ) {
-               touch_time = 0;
+              touch_time -= 500;
+         $('.bad_div').css('background-color','rgba('+(147-b_cnt)+','+(147-b_cnt)+',147,1)');
+         $('#b_add').css('background-color','rgba('+(147-b_cnt)+','+(147-b_cnt)+',147,1)');
+               touch_time -= 100;
         // 外枠のDIVを作成
         var elm_div = $('<li />', {
     		css: {
@@ -117,7 +123,7 @@ $(function() {
 
         // テキストを追加
         elm_div.html((b_cnt++) + " bad");
-        touch_time = 0;
+        touch_time -= 100;
         $('#b_contents').children().animate({width: '50%', height: 'hide', opacity: 'hide', fontSize: '16px'}, 'normal', function () {
             $(this).remove();
         });
@@ -126,7 +132,7 @@ $(function() {
         elm_div.appendTo($('#b_contents'));
         // 表示！
     	elm_div.animate({width: '98%', height: 'show', opacity: 'show', fontSize: '16px'}, 'normal');
-        touch_time = 0;
+        touch_time -= 100;
         // ボタンにフォーカスをセット
         $(this).focus();
       }

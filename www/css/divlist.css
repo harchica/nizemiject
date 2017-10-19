@@ -47,15 +47,13 @@ font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdan
     visibility: hidden;
 }
 .good_div{
-    height:264px;
+    height:266px;
     padding-top: 40px;
     background-color: #ea9db1;
-    border: solid 1px #ea9db1;
 }
 
 .bad_div{
-    height:264px;
+    height:266px;
     padding-top: 40px;
     background-color: #877aa5;
-    border: solid 1px #877aa5;
 }
