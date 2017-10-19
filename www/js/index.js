@@ -99,7 +99,8 @@ $(function() {
     var bdiv_element = document.createElement("div");
     bdiv_element.innerHTML = '<br>Bad:<span id="bb_cnt">' +(b_cnt-1) +'</span><br>Nowemo: <br><input name="textBox1" id="b_emo" type="text" value="" placeholder="Now Emo" /><br><button id="b_sendbutton" onclick="sendbResult();">Submit</button><br>';
     var parent_object = document.getElementById("b_form");
-    parent_object.appendChild(bdiv_element);}
+    parent_object.appendChild(bdiv_element);
+    }
     
 
       }, 100);

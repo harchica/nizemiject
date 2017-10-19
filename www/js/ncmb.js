@@ -22,6 +22,7 @@ function sendResult() {
          .save()
          .then(function(){
           window.alert("送信完了！");
+              window.location.href = "index.html";
          })
          .catch(function(err){
           window.alert("送信失敗…");
@@ -47,6 +48,7 @@ function sendbResult() {
          .save()
          .then(function(){
           window.alert("送信完了！");
+         window.location.href = "index.html";
          })
          .catch(function(err){
           window.alert("送信失敗…");
