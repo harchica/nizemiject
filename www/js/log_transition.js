@@ -1,11 +1,10 @@
 $(function() {
- 
 
     //イベントの取得
     $("body").bind("touchstart touchmove touchend", touchHandler);
  
     function touchHandler(e) {
-     //e.preventDefault();     //もともとここにpreventがありました
+     //もともとここにpreventがありました
         var touch = e.originalEvent.touches[0];  
         var id;
  
@@ -50,13 +49,13 @@ $(function() {
  
             if (diffX > 100) { //右に100px以上移動したか
  
-                if ( "log.html" ) { //移動先のページがあれば、移動
-                    location.href = "log.html";
+                if ( "map.html" ) { //移動先のページがあれば、移動
+                    location.href = "map.html";
                 }
             } else if (diffX < -100) { //左に100px以上移動したか
  
-                if ( "map.html") { //移動先のページがあれば、移動
-                    location.href = "map.html";
+                if ( "index.html") { //移動先のページがあれば、移動
+                    location.href = "index.html";
                 }
             } else { //左右100px以下の移動距離であれば、スライドして元の位置に戻る。
                     $( 'body' ).animate({ left: 0 }, 200);
@@ -71,5 +70,6 @@ $(function() {
     }, 10);
 
 }
-}
+        }
+
 });
