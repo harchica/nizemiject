@@ -15,6 +15,7 @@ window.onload = function(){
            var log = logs.get("result");
            var good = logs.get("good");
            var bad = logs.get("bad");
+           var date = logs.get("createDate");
            // contents[Math.floor(Math.random() * contents.length)].get("contents")
            // window.alert("前回送ったのは「" + result + "」だよ！");
             //for (var i = 0; i < results.length; i++) {
@@ -23,16 +24,16 @@ window.onload = function(){
               //console.log(object.score + " - " + object.get("playerName"));
           if(good>0){
            // $('<li class="resultlog">'+ result +'</li>').appendTo('ul');
-       var list = $('<li class="resultlog">'+ log+'<p class="goodlog">good:'+ good+ '</p></li>');
+       var list = $('<li class="resultlog">'+ log+'<p class="goodlog">good:'+ good+'<br>date:'+date+ '</p></li>');
         $("#afterlogs").after(list);
         $('.resultlog').attr('id', 'log'+i);
         $('#log'+i).css('background-color','rgba(224,'+(137-good)+','+(162-good)+',1)');
         }
         if(bad>0){
-        var list = $('<li class="resultlog">'+log +'<br><p class="badlog">bad:'+bad+ '</span></li>');
+        var list = $('<li class="resultlog">'+log +'<br><p class="badlog">bad:'+bad+'<br>date:'+date+ '</span></li>');
         $("#afterlogs").after(list);
         $('.resultlog').attr('id', 'log'+i);
-        $('#log'+i).css('background-color','rgba('+(178-bad)+','+(137-bad)+','+'211,1)');
+        $('#log'+i).css('background-color','rgba('+(186-bad)+','+(40-bad)+','+(239-bad)+',1)');
 
         }
             }

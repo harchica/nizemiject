@@ -50,13 +50,13 @@ $(function() {
  
             if (diffX > 150) { //右に100px以上移動したか
  
-                if ( "log.html" ) { //移動先のページがあれば、移動
-                    location.href = "log.html";
+                if ( "index.html" ) { //移動先のページがあれば、移動
+                    location.href = "index.html";
                 }
             } else if (diffX < -150) { //左に100px以上移動したか
  
-                if ( "map.html") { //移動先のページがあれば、移動
-                    location.href = "map.html";
+                if ( "log.html") { //移動先のページがあれば、移動
+                    location.href = "log.html";
                 }
             } else { //左右100px以下の移動距離であれば、スライドして元の位置に戻る。
                     $( 'body' ).animate({ left: 0 }, 200);

@@ -16,13 +16,13 @@ button#add {
   line-height: 37px;
   text-align: center;
   color: #fff;
-  border:solid 1px #ea9db1;
+  border:solid 1px #edbecd;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  background: #ea9db1;
+  background: #edbecd;
         }
 .del { width: 28px; height: 28px;}
 .wrap { text-align: center; margin:auto; list-style: none outside none; border-bottom: 2px solid lightblue;  white-space: nowrap;  overflow: hidden; }
@@ -37,13 +37,13 @@ button#b_add {
   line-height: 37px;
   text-align: center;
   color: #fff;
-  border:solid 1px #877aa5;
+  border:solid 1px #ba28ef;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  background: #877aa5;
+  background: #ba28ef;
         }
         
 
